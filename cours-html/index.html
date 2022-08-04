@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours HTML</title>
+</head>
+
+<body>
+    <h1>Paragraphes et liens <span id="haut"><a href="#bas">(Vers le bas)</a></span></h1>
+    salut
+    <p>bonjour, <a href="http://elmouelhia.free.fr/teaching.html">cliquer pour visiter ma page</a></p>
+    <h1>Image</h1>
+    <img src="images/mario.png" alt="Mario Nintendo" width="300px" height="300px">
+    <p>bonjour bonsoir</p>
+    ca va
+    <h1>Listes</h1>
+    <h2>Liste 1</h2>
+    <ol>
+        <li>foot</li>
+        <li>rugby</li>
+    </ol>
+    <h2>Liste 2</h2>
+    <ul>
+        <li>nice</li>
+        <li>aix</li>
+    </ul>
+    <h2>Liste imbriquée</h2>
+    <!-- ceci est une liste imbriquée -->
+    <ul>
+        <li>France<ol>
+                <li>Marseille</li>
+                <li>Lyon</li>
+                <li>Paris</li>
+            </ol>
+        </li>
+        <li>Italie<ol>
+                <li>Turin</li>
+                <li>Milan</li>
+                <li>Rome</li>
+            </ol>
+        </li>
+    </ul>
+    <h1>Site web sur image</h1>
+    <a href="https://www.francefootball.fr" target="_blank"><img src="images/ballon.jpg" alt="Vers france football"></a>
+    <h1>Tableaux</h1>
+    <h2>Tableau 1 (Tableau 3x3)</h2>
+    <table border="1">
+        <tr>
+            <th>OM</th>
+            <th>OL</th>
+            <th>PSQ</th>
+        </tr>
+        <tr>
+            <td>Payet</td>
+            <td>Aouar</td>
+            <td>Di Maria</td>
+        </tr>
+        <tr>
+            <td>Mitroglou</td>
+            <td>Deepay</td>
+            <td>Mbappé</td>
+        </tr>
+    </table>
+    <h2>Tableau 2 (Tableau fenêtre 1, Tableau avec fusions 1)</h2>
+    <table border="1">
+        <tr>
+            <td colspan="2">1</td>
+        </tr>
+        <tr>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>6</td>
+        </tr>
+    </table>
+    <h2>Tableau 3 (Tableau fenêtre 2, Tableau avec fusions 2)</h2>
+    <table border="1">
+        <tr>
+            <td colspan="3">1</td>
+            <td rowspan="2">2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td rowspan="2">6</td>
+            <td colspan="2">7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td colspan="2">10</td>
+        </tr>
+    </table>
+    <h1>Formulaire <span id="bas"><a href="#haut">(Vers le haut)</a></span></h1>
+    <form action="page.html" method="post">
+        <fieldset>
+            <legend>Données personnelles</legend>
+            <div>
+                <label for="identifiant">Identifiant : </label>
+                <input type="number" name="identifiant" id="identifiant" placeholder="Votre identifiant ?" required>
+            </div>
+            <div>
+                <label for="nom">Nom : </label>
+                <input type="text" name="nom" id="nom" placeholder="Votre nom ?">
+            </div>
+            <div>
+                <label for="prenom">Prénom : </label>
+                <input type="text" name="prenom" id="prenom" value="John" readonly>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Données de connexion</legend>
+            <div>
+                <label for="email">Email : </label>
+                <input type="text" name="email" id="email" placeholder="Votre email ?">
+            </div>
+            <div>
+                <label for="motdepasse">Mot de passe : </label>
+                <input type="password" name="motdepasse" id="motdepasse">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Genre</legend>
+            <input type="radio" name="genre"> Homme
+            <input type="radio" name="genre"> Femme
+        </fieldset>
+        <fieldset>
+            <legend>Ville</legend>
+            <div>
+                <input type="checkbox" name="ville">Nice
+            </div>
+            <div>
+                <input type="checkbox" name="ville" checked>Marseille
+            </div>
+            <div>
+                <input type="checkbox" name="ville">Montpellier
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Sport</legend>
+            <select name="sports" multiple>
+                <option value="foot" >Foot</option>
+                <option value="hand">Hand</option>
+                <option value="rugby">Rugby</option>
+                <option value="basket" selected>Basket</option>
+            </select>
+        </fieldset>
+        <button disabled>Envoyer</button>
+    </form>
+</body>
+
+</html>
