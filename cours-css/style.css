@@ -1,0 +1,46 @@
+p {
+    color: red;
+}
+.bleu {
+    color: skyblue;
+}
+.bleu {
+    font-weight: bold;
+}
+.vert {
+    color: green !important;
+}
+.rose {
+    color: pink;
+}
+#introduction {
+    color: gold;
+}
+p.vert {
+    color: green;
+    background-color: antiquewhite;
+}
+#rouge, .red {
+    color: red;
+}
+/*div p {
+    background-color: blueviolet;
+}*/
+/*span > p {
+    background-color: coral;
+}*/
+span p {
+    background-color: coral;
+}
+/*div ~ p {
+    background-color: fuchsia;
+}*/
+div + p {
+    background-color: fuchsia;
+}
+ul ul {
+    color: blue;
+}
+ul ul li ~ li {
+    color: red;
+}
