@@ -1,0 +1,45 @@
+p {
+    /* font-style: italic; */
+    /* text-decoration: underline; */
+    /* text-decoration: line-through; */
+    font-family:Helvetica;
+}
+a:visited {
+    background-color: blue;
+}
+a:not(:visited) {
+    color: yellow;
+}
+/* p:hover {
+    font-size: 1.5em;
+
+} */
+p:hover {
+    font-weight: bold;
+    font-style: normal;
+}
+ p:hover ~ p {
+    text-decoration: underline;
+    font-style: normal;
+} 
+#conteneur:hover {
+    font-style: italic;
+}
+#conteneur {
+    border: 3px red solid;
+}
+#cadre {
+    border-top: 5px red solid;
+    border-left: 5px green dashed;
+    border-bottom: 5px black dotted;
+    border-right: 5px blue double;
+    margin-top: 20px;
+    padding: 20px;
+}
+ul {
+    list-style-type: square;
+}
+span {
+    /* visibility: hidden; */
+    
+}
